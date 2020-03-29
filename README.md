@@ -11,3 +11,9 @@ This is jphp package for using lucene java library (ver 8.5+)
 ```
 jppm add jphp-lucene-ext@git+https://github.com/jphp-group/jphp-lucene-ext.git
 ```
+
+## How to run tests?
+
+```
+jppm build+test
+```
