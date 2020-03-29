@@ -1,0 +1,16 @@
+build/
+
+package-lock.php.yml
+package.github.yml
+package.hub.yml
+
+*.gradle
+gradlew
+gradlew.bat
+.gradle
+gradle/
+
+
+.idea/
+
+vendor/
