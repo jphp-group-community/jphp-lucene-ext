@@ -6,13 +6,17 @@ Lucene is a Java library providing powerful indexing and search features, as wel
 
 This is jphp package for using lucene java library (ver 8.5+)
 
-## How To Add?
+### How To Add?
+
+Use `jppm` tool:
 
 ```
 jppm add jphp-lucene-ext@git+https://github.com/jphp-group/jphp-lucene-ext.git
 ```
 
-## How to run tests?
+
+
+### How to run tests?
 
 ```
 jppm build+test
