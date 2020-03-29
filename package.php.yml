@@ -1,0 +1,27 @@
+name: jphp-lucene-ext
+type: library
+version: 1.0.0
+description: Java library providing powerful indexing and search features, as well as spellchecking, hit highlighting and advanced analysis/tokenization capabilities.
+
+plugins: [Gradle]
+
+devDeps:
+  jphp-core: '*'
+  tester: git+https://github.com/jphp-group/tester
+
+tasks:
+  build+test:
+    description: Build and run tests.
+    depends-on: ['build', 'test']
+
+config:
+  ignore: ['/sandbox/**', '/package-dev.php.yml', '/.idea/**', '/.git/**']
+
+lucene:
+  version: '8.5.0'
+
+gradle:
+  deps:
+    - 'org.apache.lucene:lucene-core:%lucene.version%'
+    - 'org.apache.lucene:lucene-analyzers-common:%lucene.version%'
+    - 'org.apache.lucene:lucene-queryparser:%lucene.version%'
